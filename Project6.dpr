@@ -5,7 +5,7 @@ program Project6;
 {$R *.res}
 
 uses
-  System.SysUtils;
+  SysUtils;
 
 function doit(n,m:cardinal):int64; stdcall external 'Project5.dll';
 begin

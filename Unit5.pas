@@ -3,8 +3,8 @@ unit Unit5;
 interface
 
 uses
-  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
-  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls;
+  Windows, Messages, SysUtils, Variants, Classes, Graphics,
+  Controls, Forms, Dialogs, StdCtrls;
 
 type
   TForm5 = class(TForm)
@@ -35,8 +35,6 @@ implementation
 var
   h: HModule;
   doit_dynamic:function(n,m:cardinal):int64; stdcall;
-//  procedure load;
-//  procedure unload;
 
 procedure load;
 begin
