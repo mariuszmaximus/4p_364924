@@ -10,7 +10,7 @@ var
   p:array of pointer;
 
 
-function doit(n, m: cardinal): int64; stdcall; // stdcall;
+function doit(n, m: cardinal): int64; stdcall;
 var
   i: integer;
 begin
@@ -18,7 +18,7 @@ begin
     if p[i] <> nil then
       freemem(p[i]);
   result := 0;
-  //p := nil;
+  p := nil;
   try
     setlength(p, n);
     for i := 0 to length(p) - 1 do
@@ -35,7 +35,5 @@ end;
 exports doit;
 
 begin
-  // p := nil;
-  // writeln('aaa');
-
+  p := nil;
 end.
